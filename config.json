@@ -1,0 +1,100 @@
+{
+  "appConfig": {
+    "logoUrl": "https://iili.io/your_app_logo.png",
+    "globalAdScript": "<script>console.log('Global Ad Network Loaded');</script>"
+  },
+  "notifications": [
+    {
+      "id": "notif_v9_001",
+      "title": "حلقة جديدة متاحة الآن! 🔥",
+      "body": "تمت إضافة الحلقة الأولى من المحتوى الحصري بجودة 4K.",
+      "imageUrl": "https://iili.io/notification_image.webp",
+      "targetId": "movie_101",
+      "timestamp": "2026-05-07T12:00:00Z"
+    },
+    {
+      "id": "notif_v9_002",
+      "title": "تحديثات الخوادم ⚡",
+      "body": "تمت إضافة خوادم سريعة جديدة لتشغيل الفيديو بدون تقطيع.",
+      "imageUrl": null,
+      "targetId": null,
+      "timestamp": "2026-05-07T10:00:00Z"
+    }
+  ],
+  "hero": {
+    "title": "The Immortal Build V9",
+    "posterUrl": "https://iili.io/hero_poster.webp",
+    "targetId": "movie_101",
+    "isExternal": false,
+    "externalUrl": null
+  },
+  "sections": [
+    {
+      "title": "الأكثر رواجاً",
+      "showTitles": true,
+      "items": [
+        {
+          "id": "movie_101",
+          "imageUrl": "https://iili.io/poster_101.webp",
+          "title": "Project Flutter V9"
+        }
+      ]
+    }
+  ],
+  "searchSuggestions": [
+    {
+      "id": "movie_101",
+      "imageUrl": "https://iili.io/poster_101.webp",
+      "title": "Project Flutter V9"
+    }
+  ],
+  "movies_db": {
+    "movie_101": {
+      "id": "movie_101",
+      "title": "Project Flutter V9",
+      "overview": "هذا المحتوى يستعرض قوة محرك الفيديو، نظام الإشعارات الهجين، وتقنيات التحميل المسبق الصارمة التي تم دمجها بنجاح.",
+      "posterPath": "https://iili.io/poster_101.webp",
+      "adScript": "<div style='color:white; background:black; padding:20px; text-align:center;'>Your Custom Movie Ad Here</div>",
+      "rating": "9.8",
+      "releaseYear": "2026",
+      "ageRating": "+18",
+      "infoIconUrl": null,
+      "infoNote": "يحتوي هذا الفيديو على تقنيات برمجية متقدمة، يرجى التركيز أثناء المشاهدة.",
+      "seasons": [
+        {
+          "id": "season_1",
+          "title": "الموسم الأول",
+          "episodes": [
+            {
+              "id": "ep_1",
+              "title": "مقدمة المعمارية السائلة",
+              "thumbnailUrl": "https://iili.io/thumb_ep1.webp",
+              "duration": "45:00",
+              "seasonNumber": 1,
+              "episodeNumber": 1,
+              "sources": [
+                {
+                  "quality": "1080p",
+                  "urls": [
+                    "ENC:aHR0cHM6Ly90ZXN0LXN0cmVhbXMubXV4LmRldi94MzZ4aHp6L3gzNnhoenoubTN1OA==",
+                    "ENC:aHR0cHM6Ly9hbHRlcm5hdGUteHN0cmVhbS5jb20vdmlkZW8ubTN1OA=="
+                  ]
+                },
+                {
+                  "quality": "720p",
+                  "urls": [
+                    "ENC:aHR0cHM6Ly90ZXN0LXN0cmVhbXMubXV4LmRldi94MzZ4aHp6L3gzNnhoenoubTN1OA=="
+                  ]
+                }
+              ],
+              "subtitles": {
+                "ar": "https://raw.githubusercontent.com/username/repo/main/arabic.vtt",
+                "en": "https://raw.githubusercontent.com/username/repo/main/english.vtt"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
