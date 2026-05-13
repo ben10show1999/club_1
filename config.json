@@ -1,100 +1,170 @@
 {
   "appConfig": {
-    "logoUrl": "https://iili.io/your_app_logo.png",
-    "globalAdScript": "<script>console.log('Global Ad Network Loaded');</script>"
+    "logoUrl": "https://iili.io/q2Ty8N4.webp",
+    "globalAdScript": "<script>atOptions = { 'key' : 'GLOBAL_AD_KEY_123', 'format' : 'iframe', 'height' : 250, 'width' : 300, 'params' : {} };</script><script src=\"https://www.highperformanceformat.com/GLOBAL_AD_KEY_123/invoke.js\"></script>"
   },
   "notifications": [
     {
       "id": "notif_v9_001",
-      "title": "حلقة جديدة متاحة الآن! 🔥",
-      "body": "تمت إضافة الحلقة الأولى من المحتوى الحصري بجودة 4K.",
-      "imageUrl": "https://iili.io/notification_image.webp",
-      "targetId": "movie_101",
-      "timestamp": "2026-05-07T12:00:00Z"
+      "title": "إشعار حصري: بطل العالم",
+      "body": "تم إطلاق الإصدار التاسع بنجاح مع محرك إشعارات لامركزي. انقر للمشاهدة الآن!",
+      "time": "الآن",
+      "targetId": "movie_001",
+      "imageUrl": "https://iili.io/fZAinLv.webp"
     },
     {
       "id": "notif_v9_002",
-      "title": "تحديثات الخوادم ⚡",
-      "body": "تمت إضافة خوادم سريعة جديدة لتشغيل الفيديو بدون تقطيع.",
-      "imageUrl": null,
-      "targetId": null,
-      "timestamp": "2026-05-07T10:00:00Z"
+      "title": "البث المباشر متاح",
+      "body": "قناة البث الحي تعمل الآن بكفاءة مع تجاوز CORS.",
+      "time": "منذ ساعة",
+      "targetId": "movie_live",
+      "imageUrl": "https://iili.io/q2Ty8N4.webp"
     }
   ],
   "hero": {
-    "title": "The Immortal Build V9",
-    "posterUrl": "https://iili.io/hero_poster.webp",
-    "targetId": "movie_101",
-    "isExternal": false,
-    "externalUrl": null
+    "title": "حصرياً: بطل العالم - الإصدار التاسع V9",
+    "posterUrl": "https://iili.io/fZAinLv.webp",
+    "targetId": "movie_001",
+    "isExternal": false
   },
   "sections": [
     {
-      "title": "الأكثر رواجاً",
+      "title": "أحدث الإضافات (V9 Showcase)",
       "showTitles": true,
       "items": [
-        {
-          "id": "movie_101",
-          "imageUrl": "https://iili.io/poster_101.webp",
-          "title": "Project Flutter V9"
-        }
+        { "id": "movie_001", "imageUrl": "https://iili.io/fZAinLv.webp", "title": "بطل العالم (إعلان مركزي)" },
+        { "id": "movie_live", "imageUrl": "https://iili.io/q2Ty8N4.webp", "title": "البث المباشر (تجاوز CORS)" },
+        { "id": "movie_002", "imageUrl": "https://iili.io/fZAinLv.webp", "title": "الواجهة السائلة (إعلان مخصص)" }
+      ]
+    },
+    {
+      "title": "توصيات المحرك الذكي",
+      "showTitles": false,
+      "items": [
+        { "id": "movie_001", "imageUrl": "https://iili.io/fZAinLv.webp", "title": "بطل العالم" }
       ]
     }
   ],
   "searchSuggestions": [
-    {
-      "id": "movie_101",
-      "imageUrl": "https://iili.io/poster_101.webp",
-      "title": "Project Flutter V9"
-    }
+    { "id": "movie_001", "imageUrl": "https://iili.io/fZAinLv.webp", "title": "بطل العالم" },
+    { "id": "movie_live", "imageUrl": "https://iili.io/q2Ty8N4.webp", "title": "البث المباشر" },
+    { "id": "movie_002", "imageUrl": "https://iili.io/fZAinLv.webp", "title": "فيلم الأبعاد المرنة" }
   ],
   "movies_db": {
-    "movie_101": {
-      "id": "movie_101",
-      "title": "Project Flutter V9",
-      "overview": "هذا المحتوى يستعرض قوة محرك الفيديو، نظام الإشعارات الهجين، وتقنيات التحميل المسبق الصارمة التي تم دمجها بنجاح.",
-      "posterPath": "https://iili.io/poster_101.webp",
-      "adScript": "<div style='color:white; background:black; padding:20px; text-align:center;'>Your Custom Movie Ad Here</div>",
-      "rating": "9.8",
+    "movie_001": {
+      "id": "movie_001",
+      "title": "بطل العالم (محرك سباق الروابط)",
+      "overview": "هذا المحتوى مصمم لاختبار محرك سباق الروابط (Link Racing). تم تعمد ترك حقل adScript فارغاً لاختبار قدرة التطبيق على سحب الإعلان المركزي (Global Ad).",
+      "posterPath": "https://iili.io/fZAinLv.webp",
+      "adScript": null,
+      "rating": "9.9",
       "releaseYear": "2026",
-      "ageRating": "+18",
-      "infoIconUrl": null,
-      "infoNote": "يحتوي هذا الفيديو على تقنيات برمجية متقدمة، يرجى التركيز أثناء المشاهدة.",
+      "ageRating": "PG-13",
+      "infoIconUrl": "https://iili.io/q2Ty8N4.webp",
+      "infoNote": "يُرجى توخي الحذر عند المشاهدة. قد يحتوي على مشاهد لا تناسب الأطفال.",
       "seasons": [
         {
           "id": "season_1",
           "title": "الموسم الأول",
           "episodes": [
             {
-              "id": "ep_1",
-              "title": "مقدمة المعمارية السائلة",
-              "thumbnailUrl": "https://iili.io/thumb_ep1.webp",
+              "id": "s1_e1",
+              "title": "الموسم 1 - الحلقة 1: السباق",
               "duration": "45:00",
               "seasonNumber": 1,
               "episodeNumber": 1,
+              "thumbnailUrl": "https://iili.io/fZAinLv.webp",
+              "subtitles": {
+                "ar": "https://cdn.plyr.io/static/demo/thumbs/100p.vtt",
+                "en": "https://cdn.plyr.io/static/demo/thumbs/100p.vtt",
+                "original": "https://cdn.plyr.io/static/demo/thumbs/100p.vtt"
+              },
               "sources": [
                 {
                   "quality": "1080p",
                   "urls": [
-                    "ENC:aHR0cHM6Ly90ZXN0LXN0cmVhbXMubXV4LmRldi94MzZ4aHp6L3gzNnhoenoubTN1OA==",
-                    "ENC:aHR0cHM6Ly9hbHRlcm5hdGUteHN0cmVhbS5jb20vdmlkZW8ubTN1OA=="
+                    "https://movie.vodu.me:8888/videos/Batal_Al_Alam_S01_E01_1768757539-1080.mp4",
+                    "https://backup1.vodu.me:8888/videos/Batal_Al_Alam_S01_E01_1768757539-1080.mp4"
                   ]
                 },
                 {
-                  "quality": "720p",
+                  "quality": "480p",
                   "urls": [
-                    "ENC:aHR0cHM6Ly90ZXN0LXN0cmVhbXMubXV4LmRldi94MzZ4aHp6L3gzNnhoenoubTN1OA=="
+                    "https://movie.vodu.me:8888/videos/Batal_Al_Alam_S01_E01_1768757539-360.mp4"
                   ]
                 }
-              ],
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "movie_live": {
+      "id": "movie_live",
+      "title": "قناة البث المباشر (اختبار CORS)",
+      "overview": "قناة HLS حية. ستلاحظ هنا أن محرك تعقيم الرؤوس سيعمل تلقائياً لمنع أي أخطاء CORS. هذا المحتوى يرث الإعلان المركزي.",
+      "posterPath": "https://iili.io/q2Ty8N4.webp",
+      "adScript": null,
+      "seasons": [
+        {
+          "id": "live_stream",
+          "title": "البث المباشر",
+          "episodes": [
+            {
+              "id": "live_ch1",
+              "title": "مشاهدة البث الحي",
+              "duration": "LIVE",
+              "seasonNumber": 1,
+              "episodeNumber": 1,
+              "subtitles": {},
+              "sources": [
+                {
+                  "quality": "Auto",
+                  "urls": [
+                    "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "movie_002": {
+      "id": "movie_002",
+      "title": "اختبار الواجهة السائلة (Fluid Layout)",
+      "overview": "هذا الفيديو مخصص لاختبار التكيف مع أبعاد الفيديو. هنا تم حقن إعلان مخصص لاختبار تجاوز الإعلان المركزي وانكماش الإعلان.",
+      "posterPath": "https://iili.io/fZAinLv.webp",
+      "adScript": "<script>atOptions = { 'key' : 'CUSTOM_AD_KEY_999', 'format' : 'iframe', 'height' : 250, 'width' : 300, 'params' : {} };</script><script src=\"https://www.highperformanceformat.com/CUSTOM_AD_KEY_999/invoke.js\"></script>",
+      "rating": "8.5",
+      "releaseYear": "2026",
+      "ageRating": "R",
+      "seasons": [
+        {
+          "id": "s1",
+          "title": "التجارب المرئية",
+          "episodes": [
+            {
+              "id": "m_1",
+              "title": "فيديو بأبعاد متغيرة",
+              "duration": "120:00",
+              "seasonNumber": 1,
+              "episodeNumber": 1,
               "subtitles": {
-                "ar": "https://raw.githubusercontent.com/username/repo/main/arabic.vtt",
-                "en": "https://raw.githubusercontent.com/username/repo/main/english.vtt"
-              }
+                "ar": "https://cdn.plyr.io/static/demo/thumbs/100p.vtt"
+              },
+              "sources": [
+                {
+                  "quality": "1080p",
+                  "urls": [
+                    "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                  ]
+                }
+              ]
             }
           ]
         }
       ]
     }
   }
-}
+                    }
