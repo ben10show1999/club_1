@@ -1,0 +1,33 @@
+name: Send FCM Notification on Config Update
+
+on:
+  push:
+    paths:
+      - 'config.json'
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Extract Latest Notification
+        id: extract
+        run: |
+          TITLE=$(jq -r '.notifications[0].title' config.json)
+          BODY=$(jq -r '.notifications[0].body' config.json)
+          echo "title=$TITLE" >> $GITHUB_OUTPUT
+          echo "body=$BODY" >> $GITHUB_OUTPUT
+
+      - name: Send Firebase Cloud Message
+        run: |
+          curl -X POST -H "Authorization: key=${{ secrets.FCM_SERVER_KEY }}" \
+          -H "Content-Type: application/json" \
+          -d '{
+            "to": "/topics/all_users",
+            "notification": {
+              "title": "${{ steps.extract.outputs.title }}",
+              "body": "${{ steps.extract.outputs.body }}"
+            }
+          }' https://fcm.googleapis.com/fcm/send
