@@ -15,19 +15,31 @@ jobs:
       - name: Extract Latest Notification
         id: extract
         run: |
+          # استخراج عنوان ومحتوى أحدث إشعار من المصفوفة
           TITLE=$(jq -r '.notifications[0].title' config.json)
           BODY=$(jq -r '.notifications[0].body' config.json)
           echo "title=$TITLE" >> $GITHUB_OUTPUT
           echo "body=$BODY" >> $GITHUB_OUTPUT
 
-      - name: Send Firebase Cloud Message
+      - name: Authenticate to Google Cloud
+        id: auth
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
+          token_format: 'access_token'
+
+      - name: Send FCM Notification (HTTP v1 API)
         run: |
-          curl -X POST -H "Authorization: key=${{ secrets.FCM_SERVER_KEY }}" \
+          curl -X POST \
+          -H "Authorization: Bearer ${{ steps.auth.outputs.access_token }}" \
           -H "Content-Type: application/json" \
           -d '{
-            "to": "/topics/all_users",
-            "notification": {
-              "title": "${{ steps.extract.outputs.title }}",
-              "body": "${{ steps.extract.outputs.body }}"
+            "message": {
+              "topic": "all_users",
+              "notification": {
+                "title": "${{ steps.extract.outputs.title }}",
+                "body": "${{ steps.extract.outputs.body }}"
+              }
             }
-          }' https://fcm.googleapis.com/fcm/send
+          }' \
+          https://fcm.googleapis.com/v1/projects/my-video-project-c6696/messages:send
