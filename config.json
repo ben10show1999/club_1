@@ -5,7 +5,7 @@
   },
   "notifications": [
     {
-      "id": "notif_v9_004",
+      "id": "notif_v9_000",
       "title": "إشعار الآن: بطل العالم",
       "body": "تم إطلاق الإصدار التاسع بنجاح مع محرك إشعارات لامركزي. انقر للمشاهدة الآن!",
       "time": "الآن",
@@ -27,6 +27,14 @@
       "time": "منذ ساعة",
       "targetId": "movie_live",
       "imageUrl": "https://iili.io/q2Ty8N4.webp"
+    },
+    {
+      "id": "notif_v9_003",
+      "title": "إشعار الآن: بطل العالم",
+      "body": "تم إطلاق الإصدار التاسع بنجاح مع محرك إشعارات لامركزي. انقر للمشاهدة الآن!",
+      "time": "الآن",
+      "targetId": "movie_001",
+      "imageUrl": "https://iili.io/fZAinLv.webp"
     }
   ],
   "hero": {
