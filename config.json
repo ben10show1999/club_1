@@ -19,6 +19,14 @@
       "time": "منذ ساعة",
       "targetId": "movie_live",
       "imageUrl": "https://iili.io/q2Ty8N4.webp"
+    },
+    {
+      "id": "notif_v11_003",
+      "title": "البث المباشر متاح",
+      "body": "قناة البث الحي تعمل الآن بكفاءة عالية. لا تفوت الحدث.",
+      "time": "منذ ساعة",
+      "targetId": "movie_live",
+      "imageUrl": "https://iili.io/q2Ty8N4.webp"
     }
   ],
   "hero": {
