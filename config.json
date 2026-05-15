@@ -5,52 +5,36 @@
   },
   "notifications": [
     {
-      "id": "notif_v9_000",
-      "title": "إشعار الآن: بطل العالم",
-      "body": "تم إطلاق الإصدار التاسع بنجاح مع محرك إشعارات لامركزي. انقر للمشاهدة الآن!",
+      "id": "notif_v11_001",
+      "title": "إشعار النظام الذكي: التحديث V11",
+      "body": "تم تفعيل محرك الإشعارات المحلي (OS-Level) بنجاح لجميع المنصات. انقر هنا للتجربة!",
       "time": "الآن",
       "targetId": "movie_001",
       "imageUrl": "https://iili.io/fZAinLv.webp"
     },
     {
-      "id": "notif_v9_001",
-      "title": "إشعار حصري: بطل العالم",
-      "body": "تم إطلاق الإصدار التاسع بنجاح مع محرك إشعارات لامركزي. انقر للمشاهدة الآن!",
-      "time": "الآن",
-      "targetId": "movie_001",
-      "imageUrl": "https://iili.io/fZAinLv.webp"
-    },
-    {
-      "id": "notif_v9_002",
+      "id": "notif_v11_002",
       "title": "البث المباشر متاح",
-      "body": "قناة البث الحي تعمل الآن بكفاءة مع تجاوز CORS.",
+      "body": "قناة البث الحي تعمل الآن بكفاءة عالية. لا تفوت الحدث.",
       "time": "منذ ساعة",
       "targetId": "movie_live",
       "imageUrl": "https://iili.io/q2Ty8N4.webp"
-    },
-    {
-      "id": "notif_v9_003",
-      "title": "إشعار الآن: بطل العالم",
-      "body": "تم إطلاق الإصدار التاسع بنجاح مع محرك إشعارات لامركزي. انقر للمشاهدة الآن!",
-      "time": "الآن",
-      "targetId": "movie_001",
-      "imageUrl": "https://iili.io/fZAinLv.webp"
     }
   ],
   "hero": {
-    "title": "حصرياً: بطل العالم - الإصدار التاسع V9",
+    "title": "حصرياً: بطل العالم - الإصدار الأعظم V11",
     "posterUrl": "https://iili.io/fZAinLv.webp",
     "targetId": "movie_001",
     "isExternal": false
   },
   "sections": [
     {
-      "title": "أحدث الإضافات (V9 Showcase)",
+      "title": "أحدث الإضافات",
       "showTitles": true,
       "items": [
-        { "id": "movie_001", "imageUrl": "https://iili.io/fZAinLv.webp", "title": "بطل العالم (إعلان مركزي)" },
-        { "id": "movie_live", "imageUrl": "https://iili.io/q2Ty8N4.webp", "title": "البث المباشر (تجاوز CORS)" },
-        { "id": "movie_002", "imageUrl": "https://iili.io/fZAinLv.webp", "title": "الواجهة السائلة (إعلان مخصص)" }
+        { "id": "movie_001", "imageUrl": "https://iili.io/fZAinLv.webp", "title": "بطل العالم" },
+        { "id": "movie_live", "imageUrl": "https://iili.io/q2Ty8N4.webp", "title": "البث المباشر" },
+        { "id": "movie_002", "imageUrl": "https://iili.io/fZAinLv.webp", "title": "الواجهة السائلة" }
       ]
     },
     {
@@ -70,7 +54,7 @@
     "movie_001": {
       "id": "movie_001",
       "title": "بطل العالم (محرك سباق الروابط)",
-      "overview": "هذا المحتوى مصمم لاختبار محرك سباق الروابط (Link Racing). تم تعمد ترك حقل adScript فارغاً لاختبار قدرة التطبيق على سحب الإعلان المركزي (Global Ad).",
+      "overview": "هذا المحتوى مصمم لاختبار محرك سباق الروابط (Link Racing) والتكامل مع إشعارات النظام.",
       "posterPath": "https://iili.io/fZAinLv.webp",
       "adScript": null,
       "rating": "9.9",
@@ -92,8 +76,7 @@
               "thumbnailUrl": "https://iili.io/fZAinLv.webp",
               "subtitles": {
                 "ar": "https://cdn.plyr.io/static/demo/thumbs/100p.vtt",
-                "en": "https://cdn.plyr.io/static/demo/thumbs/100p.vtt",
-                "original": "https://cdn.plyr.io/static/demo/thumbs/100p.vtt"
+                "en": "https://cdn.plyr.io/static/demo/thumbs/100p.vtt"
               },
               "sources": [
                 {
@@ -117,8 +100,8 @@
     },
     "movie_live": {
       "id": "movie_live",
-      "title": "قناة البث المباشر (اختبار CORS)",
-      "overview": "قناة HLS حية. ستلاحظ هنا أن محرك تعقيم الرؤوس سيعمل تلقائياً لمنع أي أخطاء CORS. هذا المحتوى يرث الإعلان المركزي.",
+      "title": "قناة البث المباشر",
+      "overview": "قناة HLS حية تعمل تلقائياً عبر محرك تجاوز CORS.",
       "posterPath": "https://iili.io/q2Ty8N4.webp",
       "adScript": null,
       "seasons": [
@@ -148,8 +131,8 @@
     },
     "movie_002": {
       "id": "movie_002",
-      "title": "اختبار الواجهة السائلة (Fluid Layout)",
-      "overview": "هذا الفيديو مخصص لاختبار التكيف مع أبعاد الفيديو. هنا تم حقن إعلان مخصص لاختبار تجاوز الإعلان المركزي وانكماش الإعلان.",
+      "title": "اختبار الواجهة السائلة",
+      "overview": "مخصص لاختبار التكيف مع أبعاد الفيديو وانكماش الإعلانات المخصصة.",
       "posterPath": "https://iili.io/fZAinLv.webp",
       "adScript": "<script>atOptions = { 'key' : 'CUSTOM_AD_KEY_999', 'format' : 'iframe', 'height' : 250, 'width' : 300, 'params' : {} };</script><script src=\"https://www.highperformanceformat.com/CUSTOM_AD_KEY_999/invoke.js\"></script>",
       "rating": "8.5",
@@ -166,9 +149,7 @@
               "duration": "120:00",
               "seasonNumber": 1,
               "episodeNumber": 1,
-              "subtitles": {
-                "ar": "https://cdn.plyr.io/static/demo/thumbs/100p.vtt"
-              },
+              "subtitles": {},
               "sources": [
                 {
                   "quality": "1080p",
@@ -183,4 +164,4 @@
       ]
     }
   }
-                    }
+    }
