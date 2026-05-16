@@ -2,22 +2,23 @@ name: OS-Level Push Engine V11
 
 on:
   push:
-    branches:
-      - main
     paths:
-      - 'config.json' # يعمل فقط عند تعديل هذا الملف
+      - 'config.json'
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   send_fcm_notification:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '24'
 
       - name: Install Dependencies
         run: npm install google-auth-library
@@ -33,15 +34,18 @@ jobs:
 
           async function sendPush() {
             try {
-              // 1. قراءة قاعدة البيانات السحابية
               const config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
               if (!config.notifications || config.notifications.length === 0) return;
               
-              // سحب أحدث إشعار
               const latestNotif = config.notifications[0];
-              console.log('Targeting Notification:', latestNotif.title);
+              const testToken = config.testWebToken;
+              
+              // التوجيه الذكي: إذا كان هناك Token اختباري للويب، استهدفه. وإلا استهدف الـ Topic للتطبيقات المدمجة
+              const target = (testToken && testToken.length > 10) ? { token: testToken } : { topic: 'all_users' };
+              
+              console.log('🎯 Targeting:', target);
+              console.log('✉️ Notification:', latestNotif.title);
 
-              // 2. تهيئة المصادقة مع جوجل
               const credentials = JSON.parse(process.env.SERVICE_ACCOUNT_JSON);
               const auth = new GoogleAuth({
                 credentials,
@@ -53,10 +57,9 @@ jobs:
               const accessToken = tokenResponse.token;
               const projectId = credentials.project_id;
 
-              // 3. بناء حمولة الإشعار لنظام التشغيل (OS Payload)
               const payload = JSON.stringify({
                 message: {
-                  topic: 'all_users',
+                  ...target,
                   notification: {
                     title: latestNotif.title,
                     body: latestNotif.body,
@@ -68,12 +71,11 @@ jobs:
                     click_action: 'FLUTTER_NOTIFICATION_CLICK'
                   },
                   webpush: {
-                    fcm_options: { link: 'https://myapp.com' }
+                    fcm_options: { link: 'https://ben10show1999.github.io/club_1/' }
                   }
                 }
               });
 
-              // 4. إطلاق النبضة
               const options = {
                 hostname: 'fcm.googleapis.com',
                 path: '/v1/projects/' + projectId + '/messages:send',
@@ -88,10 +90,10 @@ jobs:
               const req = https.request(options, (res) => {
                 let data = '';
                 res.on('data', (chunk) => data += chunk);
-                res.on('end', () => console.log('FCM Response:', data));
+                res.on('end', () => console.log('✅ FCM Response:', data));
               });
 
-              req.on('error', (e) => console.error('FCM Error:', e));
+              req.on('error', (e) => console.error('❌ FCM Error:', e));
               req.write(payload);
               req.end();
 
