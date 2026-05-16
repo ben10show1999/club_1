@@ -3,7 +3,7 @@ name: OS-Level Push Engine V11
 on:
   push:
     paths:
-      - 'config.json' # يعمل فقط عند تعديل هذا الملف
+      - './config.json' # يعمل فقط عند تعديل هذا الملف
 
 jobs:
   send_fcm_notification:
