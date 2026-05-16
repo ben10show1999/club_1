@@ -21,6 +21,15 @@
       "targetId": "movie_live",
       "imageUrl": "https://iili.io/q2Ty8N4.webp",
       "payload": "live_event_started"
+    },
+    {
+      "id": "notif_live_003",
+      "title": "البث المباشر يعمل الآن",
+      "body": "تم تشغيل محرك البث الحي عبر HLS بنجاح وبدون مشاكل CORS. انضم للمشاهدة.",
+      "time": "منذ 15 دقيقة",
+      "targetId": "movie_live",
+      "imageUrl": "https://iili.io/q2Ty8N4.webp",
+      "payload": "live_event_started"
     }
   ],
   "hero": {
