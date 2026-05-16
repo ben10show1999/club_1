@@ -39,6 +39,15 @@
       "targetId": "movie_live",
       "imageUrl": "https://iili.io/q2Ty8N4.webp",
       "payload": "live_event_started"
+    },
+    {
+      "id": "notif_v11_master_005",
+      "title": "تحديث V12: اختراق النظام بنجاح!",
+      "body": "نظام الإشعارات السيادي (OS-Level) يعمل الآن بثبات في الخلفية على جميع المنصات. انقر هنا لاختبار التوجيه الذكي.",
+      "time": "الآن",
+      "targetId": "movie_001",
+      "imageUrl": "https://iili.io/fZAinLv.webp",
+      "payload": "os_push_test_success"
     }
   ],
   "hero": {
