@@ -5,44 +5,38 @@
   },
   "notifications": [
     {
-      "id": "notif_v11_001",
-      "title": "إشعار النظام الذكي: التحديث V11",
-      "body": "تم تفعيل محرك الإشعارات المحلي (OS-Level) بنجاح لجميع المنصات. انقر هنا للتجربة!",
+      "id": "notif_v11_master_001",
+      "title": "تحديث V11: اختراق النظام بنجاح!",
+      "body": "نظام الإشعارات السيادي (OS-Level) يعمل الآن بثبات في الخلفية على جميع المنصات. انقر هنا لاختبار التوجيه الذكي.",
       "time": "الآن",
       "targetId": "movie_001",
-      "imageUrl": "https://iili.io/fZAinLv.webp"
+      "imageUrl": "https://iili.io/fZAinLv.webp",
+      "payload": "os_push_test_success"
     },
     {
-      "id": "notif_v11_002",
-      "title": "البث المباشر متاح",
-      "body": "قناة البث الحي تعمل الآن بكفاءة عالية. لا تفوت الحدث.",
-      "time": "منذ ساعة",
+      "id": "notif_live_002",
+      "title": "البث المباشر يعمل الآن",
+      "body": "تم تشغيل محرك البث الحي عبر HLS بنجاح وبدون مشاكل CORS. انضم للمشاهدة.",
+      "time": "منذ 15 دقيقة",
       "targetId": "movie_live",
-      "imageUrl": "https://iili.io/q2Ty8N4.webp"
-    },
-    {
-      "id": "notif_v11_003",
-      "title": "البث المباشر متاح",
-      "body": "قناة البث الحي تعمل الآن بكفاءة عالية. لا تفوت الحدث.",
-      "time": "منذ ساعة",
-      "targetId": "movie_live",
-      "imageUrl": "https://iili.io/q2Ty8N4.webp"
+      "imageUrl": "https://iili.io/q2Ty8N4.webp",
+      "payload": "live_event_started"
     }
   ],
   "hero": {
-    "title": "حصرياً: بطل العالم - الإصدار الأعظم V11",
+    "title": "الإصدار الأعظم V11: استقرار مطلق",
     "posterUrl": "https://iili.io/fZAinLv.webp",
     "targetId": "movie_001",
     "isExternal": false
   },
   "sections": [
     {
-      "title": "أحدث الإضافات",
+      "title": "أحدث الإضافات الهندسية",
       "showTitles": true,
       "items": [
-        { "id": "movie_001", "imageUrl": "https://iili.io/fZAinLv.webp", "title": "بطل العالم" },
-        { "id": "movie_live", "imageUrl": "https://iili.io/q2Ty8N4.webp", "title": "البث المباشر" },
-        { "id": "movie_002", "imageUrl": "https://iili.io/fZAinLv.webp", "title": "الواجهة السائلة" }
+        { "id": "movie_001", "imageUrl": "https://iili.io/fZAinLv.webp", "title": "بطل العالم (سباق الروابط)" },
+        { "id": "movie_live", "imageUrl": "https://iili.io/q2Ty8N4.webp", "title": "البث المباشر الحي" },
+        { "id": "movie_002", "imageUrl": "https://iili.io/fZAinLv.webp", "title": "اختبار الواجهة السائلة" }
       ]
     },
     {
@@ -62,14 +56,14 @@
     "movie_001": {
       "id": "movie_001",
       "title": "بطل العالم (محرك سباق الروابط)",
-      "overview": "هذا المحتوى مصمم لاختبار محرك سباق الروابط (Link Racing) والتكامل مع إشعارات النظام.",
+      "overview": "محتوى حصري مصمم لاختبار أداء محرك سباق الروابط (Link Racing)، تجاوز جدار الحماية، وإشعارات النظام المركزية للويب.",
       "posterPath": "https://iili.io/fZAinLv.webp",
       "adScript": null,
       "rating": "9.9",
       "releaseYear": "2026",
       "ageRating": "PG-13",
       "infoIconUrl": "https://iili.io/q2Ty8N4.webp",
-      "infoNote": "يُرجى توخي الحذر عند المشاهدة. قد يحتوي على مشاهد لا تناسب الأطفال.",
+      "infoNote": "يتم استخدام هذا المحتوى لاختبار السرعة القصوى لاستخراج الإطارات (Thumbnails) والتنقل السلس.",
       "seasons": [
         {
           "id": "season_1",
@@ -77,7 +71,7 @@
           "episodes": [
             {
               "id": "s1_e1",
-              "title": "الموسم 1 - الحلقة 1: السباق",
+              "title": "الحلقة 1: كسر الذاكرة المؤقتة",
               "duration": "45:00",
               "seasonNumber": 1,
               "episodeNumber": 1,
@@ -109,7 +103,7 @@
     "movie_live": {
       "id": "movie_live",
       "title": "قناة البث المباشر",
-      "overview": "قناة HLS حية تعمل تلقائياً عبر محرك تجاوز CORS.",
+      "overview": "قناة HLS حية تعمل تلقائياً عبر محرك تجاوز CORS دون أي تعارض مع إعدادات الشبكة.",
       "posterPath": "https://iili.io/q2Ty8N4.webp",
       "adScript": null,
       "seasons": [
@@ -140,7 +134,7 @@
     "movie_002": {
       "id": "movie_002",
       "title": "اختبار الواجهة السائلة",
-      "overview": "مخصص لاختبار التكيف مع أبعاد الفيديو وانكماش الإعلانات المخصصة.",
+      "overview": "مخصص لاختبار التكيف الديناميكي مع أبعاد الفيديو وانكماش الإعلانات (Fluid Iframes) باستخدام PointerInterceptor.",
       "posterPath": "https://iili.io/fZAinLv.webp",
       "adScript": "<script>atOptions = { 'key' : 'CUSTOM_AD_KEY_999', 'format' : 'iframe', 'height' : 250, 'width' : 300, 'params' : {} };</script><script src=\"https://www.highperformanceformat.com/CUSTOM_AD_KEY_999/invoke.js\"></script>",
       "rating": "8.5",
@@ -153,7 +147,7 @@
           "episodes": [
             {
               "id": "m_1",
-              "title": "فيديو بأبعاد متغيرة",
+              "title": "فيديو بأبعاد متغيرة وإعلانات ذكية",
               "duration": "120:00",
               "seasonNumber": 1,
               "episodeNumber": 1,
@@ -172,4 +166,4 @@
       ]
     }
   }
-    }
+            }
