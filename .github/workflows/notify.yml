@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - './config.json' # يعمل فقط عند تعديل هذا الملف
+      - 'config.json' # يعمل فقط عند تعديل هذا الملف
 
 jobs:
   send_fcm_notification:
