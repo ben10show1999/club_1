@@ -1,45 +1,102 @@
-name: Send FCM Notification on Config Update
+name: OS-Level Push Engine V11
 
 on:
   push:
     paths:
-      - 'config.json'
+      - 'config.json' # يعمل فقط عند تعديل هذا الملف
 
 jobs:
-  notify:
+  send_fcm_notification:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
+      - name: Checkout Code
         uses: actions/checkout@v3
 
-      - name: Extract Latest Notification
-        id: extract
-        run: |
-          # استخراج عنوان ومحتوى أحدث إشعار من المصفوفة
-          TITLE=$(jq -r '.notifications[0].title' config.json)
-          BODY=$(jq -r '.notifications[0].body' config.json)
-          echo "title=$TITLE" >> $GITHUB_OUTPUT
-          echo "body=$BODY" >> $GITHUB_OUTPUT
-
-      - name: Authenticate to Google Cloud
-        id: auth
-        uses: google-github-actions/auth@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          credentials_json: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
-          token_format: 'access_token'
+          node-version: '18'
 
-      - name: Send FCM Notification (HTTP v1 API)
+      - name: Install Dependencies
+        run: npm install google-auth-library
+
+      - name: Trigger FCM HTTP v1 API
+        env:
+          SERVICE_ACCOUNT_JSON: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
         run: |
-          curl -X POST \
-          -H "Authorization: Bearer ${{ steps.auth.outputs.access_token }}" \
-          -H "Content-Type: application/json" \
-          -d '{
-            "message": {
-              "topic": "all_users",
-              "notification": {
-                "title": "${{ steps.extract.outputs.title }}",
-                "body": "${{ steps.extract.outputs.body }}"
-              }
+          node -e "
+          const fs = require('fs');
+          const https = require('https');
+          const { GoogleAuth } = require('google-auth-library');
+
+          async function sendPush() {
+            try {
+              // 1. قراءة قاعدة البيانات السحابية
+              const config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
+              if (!config.notifications || config.notifications.length === 0) return;
+              
+              // سحب أحدث إشعار
+              const latestNotif = config.notifications[0];
+              console.log('Targeting Notification:', latestNotif.title);
+
+              // 2. تهيئة المصادقة مع جوجل
+              const credentials = JSON.parse(process.env.SERVICE_ACCOUNT_JSON);
+              const auth = new GoogleAuth({
+                credentials,
+                scopes: ['https://www.googleapis.com/auth/firebase.messaging']
+              });
+              
+              const client = await auth.getClient();
+              const tokenResponse = await client.getAccessToken();
+              const accessToken = tokenResponse.token;
+              const projectId = credentials.project_id;
+
+              // 3. بناء حمولة الإشعار لنظام التشغيل (OS Payload)
+              const payload = JSON.stringify({
+                message: {
+                  topic: 'all_users',
+                  notification: {
+                    title: latestNotif.title,
+                    body: latestNotif.body,
+                    image: latestNotif.imageUrl
+                  },
+                  data: {
+                    targetId: latestNotif.targetId || '',
+                    payload: latestNotif.payload || '',
+                    click_action: 'FLUTTER_NOTIFICATION_CLICK'
+                  },
+                  webpush: {
+                    fcm_options: { link: 'https://myapp.com' }
+                  }
+                }
+              });
+
+              // 4. إطلاق النبضة
+              const options = {
+                hostname: 'fcm.googleapis.com',
+                path: '/v1/projects/' + projectId + '/messages:send',
+                method: 'POST',
+                headers: {
+                  'Authorization': 'Bearer ' + accessToken,
+                  'Content-Type': 'application/json',
+                  'Content-Length': Buffer.byteLength(payload)
+                }
+              };
+
+              const req = https.request(options, (res) => {
+                let data = '';
+                res.on('data', (chunk) => data += chunk);
+                res.on('end', () => console.log('FCM Response:', data));
+              });
+
+              req.on('error', (e) => console.error('FCM Error:', e));
+              req.write(payload);
+              req.end();
+
+            } catch (error) {
+              console.error('Fatal Error:', error);
+              process.exit(1);
             }
-          }' \
-          https://fcm.googleapis.com/v1/projects/my-video-project-c6696/messages:send
+          }
+          sendPush();
+          "
