@@ -6,13 +6,22 @@
   },
   "notifications": [
     {
-      "id": "notif_v11_master_002",
+      "id": "notif_v11_master_003",
       "title": "بث مباشر جديد الآن",
       "body": "يبدء الأن بث مباشر جديد على تطبيقنا",
       "time": "الآن",
       "targetId": "movie_live",
       "imageUrl": "https://iili.io/fZAinLv.webp",
       "payload": "os_push_test_success"
+    },
+    {
+      "id": "notif_v12_sniper_002",
+      "title": "اختراق المتصفح بنجاح!",
+      "body": "نظام الإشعارات السيادي (OS-Level) يعمل الآن بثبات تام بفضل معمارية القنص المباشر.",
+      "time": "منذ دقيقة",
+      "targetId": "movie_001",
+      "imageUrl": "https://iili.io/q2Ty8N4.webp",
+      "payload": "sniper_engine_active"
     },
     {
       "id": "notif_v12_sniper_001",
