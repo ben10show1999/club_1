@@ -1,9 +1,4 @@
 {
-  "testWebToken": "BPvG4GZiDGMHneEmaOgYXY7zRgFMPIwOJw4wuHs_IDjfXlD_cMcw",
-  "appConfig": { ... },
-  "notifications": [ ... ]
-}
-{
   "appConfig": {
     "logoUrl": "https://iili.io/q2Ty8N4.webp",
     "globalAdScript": "<script>atOptions = { 'key' : 'GLOBAL_AD_KEY_123', 'format' : 'iframe', 'height' : 250, 'width' : 300, 'params' : {} };</script><script src=\"https://www.highperformanceformat.com/GLOBAL_AD_KEY_123/invoke.js\"></script>"
