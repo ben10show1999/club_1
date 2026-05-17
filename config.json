@@ -1,6 +1,5 @@
 {
-  "testWebToken": "el81Bsc4Fbihqmcg3J18od:APA91 bGnnTjcXneoi90VWjh3bZ78slUbTbfGVm5nzKHRguc7Q4xUL6RhoSyRPD-6jGmviqyHUH
-Vj-n_DWJTw4MrixLqQlssDFokroHPeVCDkPkZazRjf9KDhZ78sIU",
+  "testWebToken": "el81Bsc4Fbihqmcg3J18od:APA91 bGnnTjcXneoi90VWjh3bZ78slUbTbfGVm5nzKHRguc7Q4xUL6RhoSyRPD-6jGmviqyHUHVj-n_DWJTw4MrixLqQlssDFokroHPeVCDkPkZazRjf9KDhZ78sIU",
   "appConfig": {
     "logoUrl": "https://iili.io/q2Ty8N4.webp",
     "globalAdScript": "<script>atOptions = { 'key' : 'GLOBAL_AD_KEY_123', 'format' : 'iframe', 'height' : 250, 'width' : 300, 'params' : {} };</script><script src=\"https://www.highperformanceformat.com/GLOBAL_AD_KEY_123/invoke.js\"></script>"
