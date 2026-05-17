@@ -6,6 +6,15 @@
   },
   "notifications": [
     {
+      "id": "notif_v11_master_004",
+      "title": "بث مباشر جديد",
+      "body": "يبدء الأن بث مباشر جديد على تطبيقنا",
+      "time": "الآن",
+      "targetId": "movie_live",
+      "imageUrl": "https://iili.io/fZAinLv.webp",
+      "payload": "os_push_test_success"
+    },
+    {
       "id": "notif_v11_master_003",
       "title": "بث مباشر جديد لآن",
       "body": "يبدء الأن بث مباشر جديد على تطبيقنا",
