@@ -1,57 +1,31 @@
 {
+  "testWebToken": "الصق_الرمز_التعريفي_لمتصفحك_هنا",
   "appConfig": {
     "logoUrl": "https://iili.io/q2Ty8N4.webp",
     "globalAdScript": "<script>atOptions = { 'key' : 'GLOBAL_AD_KEY_123', 'format' : 'iframe', 'height' : 250, 'width' : 300, 'params' : {} };</script><script src=\"https://www.highperformanceformat.com/GLOBAL_AD_KEY_123/invoke.js\"></script>"
   },
   "notifications": [
     {
-      "id": "notif_v11_master_001",
-      "title": "تحديث V11: اختراق النظام بنجاح!",
-      "body": "نظام الإشعارات السيادي (OS-Level) يعمل الآن بثبات في الخلفية على جميع المنصات. انقر هنا لاختبار التوجيه الذكي.",
+      "id": "notif_v11_master_003",
+      "title": "بث مباشر جديد الآن",
+      "body": "يبدء الأن بث مباشر جديد على تطبيقنا",
       "time": "الآن",
-      "targetId": "movie_001",
+      "targetId": "movie_live",
       "imageUrl": "https://iili.io/fZAinLv.webp",
       "payload": "os_push_test_success"
     },
     {
-      "id": "notif_live_002",
-      "title": "البث المباشر يعمل الآن",
-      "body": "تم تشغيل محرك البث الحي عبر HLS بنجاح وبدون مشاكل CORS. انضم للمشاهدة.",
-      "time": "منذ 15 دقيقة",
-      "targetId": "movie_live",
-      "imageUrl": "https://iili.io/q2Ty8N4.webp",
-      "payload": "live_event_started"
-    },
-    {
-      "id": "notif_live_003",
-      "title": "البث المباشر يعمل الآن",
-      "body": "تم تشغيل محرك البث الحي عبر HLS بنجاح وبدون مشاكل CORS. انضم للمشاهدة.",
-      "time": "منذ 15 دقيقة",
-      "targetId": "movie_live",
-      "imageUrl": "https://iili.io/q2Ty8N4.webp",
-      "payload": "live_event_started"
-    },
-    {
-      "id": "notif_live_004",
-      "title": "البث المباشر يعمل الآن",
-      "body": "تم تشغيل محرك البث الحي عبر HLS بنجاح وبدون مشاكل CORS. انضم للمشاهدة.",
-      "time": "منذ 15 دقيقة",
-      "targetId": "movie_live",
-      "imageUrl": "https://iili.io/q2Ty8N4.webp",
-      "payload": "live_event_started"
-    },
-    {
-      "id": "notif_v11_master_005",
-      "title": "تحديث V12: اختراق النظام بنجاح!",
-      "body": "نظام الإشعارات السيادي (OS-Level) يعمل الآن بثبات في الخلفية على جميع المنصات. انقر هنا لاختبار التوجيه الذكي.",
-      "time": "الآن",
+      "id": "notif_v12_sniper_001",
+      "title": "اختراق المتصفح بنجاح!",
+      "body": "نظام الإشعارات السيادي (OS-Level) يعمل الآن بثبات تام بفضل معمارية القنص المباشر.",
+      "time": "منذ دقيقة",
       "targetId": "movie_001",
-      "imageUrl": "https://iili.io/fZAinLv.webp",
-      "payload": "os_push_test_success"
+      "imageUrl": "https://iili.io/q2Ty8N4.webp",
+      "payload": "sniper_engine_active"
     }
   ],
   "hero": {
-    "title": "الإصدار الأعظم V11: استقرار مطلق",
+    "title": "الإصدار الأعظم V12: استقرار مطلق",
     "posterUrl": "https://iili.io/fZAinLv.webp",
     "targetId": "movie_001",
     "isExternal": false
@@ -193,4 +167,4 @@
       ]
     }
   }
-            }
+        }
