@@ -1,49 +1,11 @@
 {
-  "testWebToken": "",
+  "testWebToken": "الصق_الرمز_التعريفي_لمتصفحك_هنا",
   "appConfig": {
     "logoUrl": "https://iili.io/q2Ty8N4.webp",
     "globalAdScript": "<script>atOptions = { 'key' : 'GLOBAL_AD_KEY_123', 'format' : 'iframe', 'height' : 250, 'width' : 300, 'params' : {} };</script><script src=\"https://www.highperformanceformat.com/GLOBAL_AD_KEY_123/invoke.js\"></script>"
   },
-  "notifications": [
-    {
-      "id": "notif_v11_master_004",
-      "title": "بث مباشر جديد",
-      "body": "يبدء الأن بث مباشر جديد على تطبيقنا",
-      "time": "الآن",
-      "targetId": "movie_live",
-      "imageUrl": "https://iili.io/fZAinLv.webp",
-      "payload": "os_push_test_success"
-    },
-    {
-      "id": "notif_v11_master_003",
-      "title": "بث مباشر جديد لآن",
-      "body": "يبدء الأن بث مباشر جديد على تطبيقنا",
-      "time": "الآن",
-      "targetId": "movie_live",
-      "imageUrl": "https://iili.io/fZAinLv.webp",
-      "payload": "os_push_test_success"
-    },
-    {
-      "id": "notif_v12_sniper_002",
-      "title": "اختراق المتصفح بنجاح!",
-      "body": "نظام الإشعارات السيادي (OS-Level) يعمل الآن بثبات تام بفضل معمارية القنص المباشر.",
-      "time": "منذ دقيقة",
-      "targetId": "movie_001",
-      "imageUrl": "https://iili.io/q2Ty8N4.webp",
-      "payload": "sniper_engine_active"
-    },
-    {
-      "id": "notif_v12_sniper_001",
-      "title": "اختراق المتصفح بنجاح!",
-      "body": "نظام الإشعارات السيادي (OS-Level) يعمل الآن بثبات تام بفضل معمارية القنص المباشر.",
-      "time": "منذ دقيقة",
-      "targetId": "movie_001",
-      "imageUrl": "https://iili.io/q2Ty8N4.webp",
-      "payload": "sniper_engine_active"
-    }
-  ],
   "hero": {
-    "title": "الإصدار الأعظم V12: استقرار مطلق",
+    "title": "الإصدار الأعظم V13: استقرار مطلق",
     "posterUrl": "https://iili.io/fZAinLv.webp",
     "targetId": "movie_001",
     "isExternal": false
@@ -185,4 +147,4 @@
       ]
     }
   }
-            }
+}
