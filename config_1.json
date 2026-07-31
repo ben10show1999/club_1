@@ -1,0 +1,145 @@
+{
+  "heroData": {
+    "title": "Inception",
+    "posterUrl": "https://iili.io/fZAinLv.webp",
+    "targetId": "m1"
+  },
+  "allSnippets": [
+    {
+      "id": "m1",
+      "title": "Inception Masterpiece",
+      "imageUrl": "https://iili.io/fZAinLv.webp",
+      "overview": "لص محترف يسرق أسرار الشركات من خلال استخدام تقنية مشاركة الأحلام، يُعرض عليه مهمة أخيرة مستحيلة: زرع فكرة داخل عقل هدف بدلاً من سرقتها.",
+      "rating": "8.8",
+      "releaseYear": "2010",
+      "ageRating": "+13",
+      "seasons": [
+        {
+          "id": "s1",
+          "title": "Season 1",
+          "episodes": [
+            {
+              "id": "e1",
+              "title": "Pilot Dream",
+              "duration": "45:00",
+              "thumbnailUrl": "https://iili.io/fZAinLv.webp",
+              "sources": [
+                {
+                  "quality": "1080p",
+                  "urls": [
+                    "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+                  ]
+                },
+                {
+                  "quality": "720p",
+                  "urls": [
+                    "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+                  ]
+                }
+              ],
+              "subtitles": {
+                "en": "https://brenopolanski.github.io/html5-video-webvtt-example/MIB2-subtitles-pt-BR.vtt",
+                "ar": "https://brenopolanski.github.io/html5-video-webvtt-example/MIB2-subtitles-pt-BR.vtt"
+              }
+            },
+            {
+              "id": "e2",
+              "title": "The Architect",
+              "duration": "42:00",
+              "thumbnailUrl": "https://iili.io/fZAinLv.webp",
+              "sources": [
+                {
+                  "quality": "1080p",
+                  "urls": [
+                    "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+                  ]
+                }
+              ],
+              "subtitles": {
+                "ar": "https://brenopolanski.github.io/html5-video-webvtt-example/MIB2-subtitles-pt-BR.vtt"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "The Dark Knight",
+      "imageUrl": "https://iili.io/fZAinLv.webp",
+      "overview": "يواجه باتمان أكبر تحدٍ له عندما يعيث مجرم فوضوي يُعرف باسم الجوكر خراباً في مدينة غوثام.",
+      "rating": "9.0",
+      "releaseYear": "2008",
+      "ageRating": "+16",
+      "seasons": [
+        {
+          "id": "s1",
+          "title": "Movie",
+          "episodes": [
+            {
+              "id": "e1",
+              "title": "Full Movie",
+              "duration": "02:32:00",
+              "thumbnailUrl": "https://iili.io/fZAinLv.webp",
+              "sources": [
+                {
+                  "quality": "Auto",
+                  "urls": [
+                    "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+                  ]
+                }
+              ],
+              "subtitles": {}
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "homeSections": [
+    {
+      "titleKey": "trending",
+      "showTitles": true,
+      "items": [
+        {
+          "id": "m1",
+          "title": "Inception Masterpiece",
+          "imageUrl": "https://iili.io/fZAinLv.webp"
+        },
+        {
+          "id": "m2",
+          "title": "The Dark Knight",
+          "imageUrl": "https://iili.io/fZAinLv.webp"
+        }
+      ]
+    },
+    {
+      "titleKey": "recommendations",
+      "showTitles": true,
+      "items": [
+        {
+          "id": "m2",
+          "title": "The Dark Knight",
+          "imageUrl": "https://iili.io/fZAinLv.webp"
+        },
+        {
+          "id": "m1",
+          "title": "Inception Masterpiece",
+          "imageUrl": "https://iili.io/fZAinLv.webp"
+        }
+      ]
+    }
+  ],
+  "searchSuggestions": [
+    {
+      "id": "m1",
+      "title": "Inception Masterpiece",
+      "imageUrl": "https://iili.io/fZAinLv.webp"
+    },
+    {
+      "id": "m2",
+      "title": "The Dark Knight",
+      "imageUrl": "https://iili.io/fZAinLv.webp"
+    }
+  ]
+                }
