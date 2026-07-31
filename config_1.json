@@ -43,6 +43,11 @@
           "id": "m2",
           "title": "The Dark Knight",
           "imageUrl": "https://iili.io/fZAinLv.webp"
+        },
+        {
+          "id": "m3",
+          "title": "Interstellar",
+          "imageUrl": "https://iili.io/fZAinLv.webp"
         }
       ]
     },
@@ -82,6 +87,55 @@
           "id": "m1",
           "title": "Inception Masterpiece",
           "imageUrl": "https://iili.io/fZAinLv.webp"
+        },
+        {
+          "id": "m3",
+          "title": "Interstellar",
+          "imageUrl": "https://iili.io/fZAinLv.webp"
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Interstellar",
+      "imageUrl": "https://iili.io/fZAinLv.webp",
+      "overview": "فريق من المستكشفين يسافرون عبر ثقب دودي في الفضاء في محاولة لضمان بقاء البشرية.",
+      "rating": "8.6",
+      "releaseYear": "2014",
+      "ageRating": "+13",
+      "seasons": [
+        {
+          "id": "s1",
+          "title": "Movie",
+          "episodes": [
+            {
+              "id": "e1",
+              "title": "Full Movie",
+              "duration": "02:49:00",
+              "thumbnailUrl": "https://iili.io/fZAinLv.webp",
+              "sources": [
+                {
+                  "quality": "Auto",
+                  "urls": [
+                    "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+                  ]
+                }
+              ],
+              "subtitles": {}
+            }
+          ]
+        }
+      ],
+      "recommendations": [
+        {
+          "id": "m1",
+          "title": "Inception Masterpiece",
+          "imageUrl": "https://iili.io/fZAinLv.webp"
+        },
+        {
+          "id": "m2",
+          "title": "The Dark Knight",
+          "imageUrl": "https://iili.io/fZAinLv.webp"
         }
       ]
     }
@@ -100,6 +154,11 @@
           "id": "m2",
           "title": "The Dark Knight",
           "imageUrl": "https://iili.io/fZAinLv.webp"
+        },
+        {
+          "id": "m3",
+          "title": "Interstellar",
+          "imageUrl": "https://iili.io/fZAinLv.webp"
         }
       ]
     }
@@ -114,6 +173,11 @@
       "id": "m2",
       "title": "The Dark Knight",
       "imageUrl": "https://iili.io/fZAinLv.webp"
+    },
+    {
+      "id": "m3",
+      "title": "Interstellar",
+      "imageUrl": "https://iili.io/fZAinLv.webp"
     }
   ]
-    }
+            }
