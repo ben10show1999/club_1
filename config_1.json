@@ -1,170 +1,258 @@
 {
-  "appConfig": {
-    "globalAdCode": "<div style='color:white; text-align:center; padding: 10px; background: #202020; border-radius: 8px;'>مساحة إعلانية (Fluid Ad Slot)</div>",
-    "watermark": {
-      "enabled": true,
-      "url": "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/assets/watermark.png",
-      "opacity": 0.5,
-      "width": "80px",
-      "top": "20px",
-      "left": "auto",
-      "right": "20px",
-      "bottom": "auto"
-    }
+  "watermark": {
+    "enabled": true,
+    "url": "https://i.imgur.com/your-logo.png",
+    "width": "90px",
+    "top": "15px",
+    "left": "15px",
+    "right": "auto",
+    "bottom": "auto",
+    "opacity": "0.85"
   },
-  "home": {
-    "heroData": {
-      "targetId": "movie_001",
-      "title": "أفاتار: طريق الماء",
-      "posterUrl": "https://image.tmdb.org/t/p/original/8rpDcsfLJypbO6vtecsmEZzAUdi.jpg"
+  "globalAdCode": "<div style=\"width:100%; text-align:center; padding:10px; background-color:#1e1e1e; color:#ffc107; font-weight:bold; border-radius:8px; border: 1px solid rgba(255,193,7,0.3);\">مساحة إعلانية عالمية مخصصة - Global Ad Space</div>",
+  "heroData": {
+    "title": "Cyber Realm: The Awakening",
+    "targetId": "movie_001",
+    "posterUrl": "https://i.imgur.com/hero-banner.jpg"
+  },
+  "homeSections": [
+    {
+      "titleKey": "trending",
+      "items": [
+        {
+          "id": "movie_001",
+          "imageUrl": "https://i.imgur.com/poster-1.jpg"
+        },
+        {
+          "id": "live_001",
+          "imageUrl": "https://i.imgur.com/poster-live.jpg"
+        }
+      ]
     },
-    "sections": [
-      {
-        "titleKey": "الأكثر رواجاً",
-        "type": "horizontal_list",
-        "items": [
-          {
-            "id": "movie_001",
-            "imageUrl": "https://image.tmdb.org/t/p/w500/t6HIqrNDIGGLt5VcI9w4PN8MPhD.jpg"
-          },
-          {
-            "id": "movie_002",
-            "imageUrl": "https://image.tmdb.org/t/p/w500/vUUqzWa2LnHIVqkaKVlVGkVcZIW.jpg"
-          }
-        ]
-      },
-      {
-        "titleKey": "أُضيف حديثاً",
-        "type": "horizontal_list",
-        "items": [
-          {
-            "id": "movie_003",
-            "imageUrl": "https://image.tmdb.org/t/p/w500/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg"
-          }
-        ]
-      }
-    ]
-  },
-  "content": {
-    "movie_001": {
+    {
+      "titleKey": "recommendations",
+      "items": [
+        {
+          "id": "movie_001",
+          "imageUrl": "https://i.imgur.com/poster-1.jpg"
+        }
+      ]
+    }
+  ],
+  "searchSuggestions": [
+    {
       "id": "movie_001",
-      "title": "أفاتار: طريق الماء",
-      "rating": "8.5",
-      "releaseYear": "2022",
-      "ageRating": "+13",
-      "overview": "جيك سولي يعيش مع عائلته الجديدة التي تشكلت على كوكب باندورا. وبمجرد عودة تهديد مألوف لإنهاء ما كان قد بدأ سابقاً، يجب على جيك العمل مع نيتيري وجيش سباق نافي لحماية كوكبهم.",
-      "imageUrl": "https://image.tmdb.org/t/p/w500/t6HIqrNDIGGLt5VcI9w4PN8MPhD.jpg",
-      "customAdCode": "",
+      "imageUrl": "https://i.imgur.com/poster-1.jpg",
+      "title": "Cyber Realm: The Awakening",
+      "overview": "في مستقبل بائس، يكتشف مبرمج شاب شفرة قادرة على إعادة كتابة الواقع نفسه، مما يجعله هدفاً لأكبر شركة تكنولوجية في العالم."
+    },
+    {
+      "id": "live_001",
+      "imageUrl": "https://i.imgur.com/poster-live.jpg",
+      "title": "قناة الرياضة العالمية - بث مباشر",
+      "overview": "تغطية حصرية لأهم البطولات والمباريات الرياضية حول العالم على مدار الساعة بتعليق عربي."
+    }
+  ],
+  "allSnippets": [
+    {
+      "id": "movie_001",
+      "title": "Cyber Realm: The Awakening",
+      "overview": "في مستقبل بائس، يكتشف مبرمج شاب شفرة قادرة على إعادة كتابة الواقع نفسه، مما يجعله هدفاً لأكبر شركة تكنولوجية في العالم. رحلة مليئة بالأكشن والقرصنة للبقاء على قيد الحياة وإنقاذ البشرية من الاستعباد الرقمي.",
+      "rating": "9.2/10",
+      "releaseYear": "2026",
+      "ageRating": "+16",
+      "imageUrl": "https://i.imgur.com/poster-1.jpg",
+      "customAdCode": "<div style=\"width:100%; text-align:center; padding:10px; background-color:#2a2a2a; color:#fff; border-radius:8px;\">إعلان مخصص لهذا المسلسل فقط</div>",
+      "watermark": {
+        "enabled": false
+      },
+      "recommendations": [
+        {
+          "id": "live_001",
+          "imageUrl": "https://i.imgur.com/poster-live.jpg"
+        }
+      ],
       "seasons": [
         {
           "id": "s1",
-          "titleKey": "الفيلم الكامل",
+          "title": "Season 1",
           "episodes": [
             {
-              "id": "ep1",
-              "title": "مشاهدة الفيلم",
-              "duration": "192:00",
-              "thumbnailUrl": "https://image.tmdb.org/t/p/w300/8rpDcsfLJypbO6vtecsmEZzAUdi.jpg",
+              "id": "m1_s1_e1",
+              "title": "الحلقة 1: الشفرة الأولى",
+              "duration": "45:30",
+              "thumbnailUrl": "https://i.imgur.com/thumb-e1.jpg",
+              "subtitles": {
+                "ar": "https://raw.githubusercontent.com/YourUsername/YourRepo/main/arabic-translator.vtt",
+                "en": "https://raw.githubusercontent.com/YourUsername/YourRepo/main/english-translator.vtt",
+                "fr": "https://raw.githubusercontent.com/YourUsername/YourRepo/main/french-translator.vtt",
+                "original": "https://raw.githubusercontent.com/YourUsername/YourRepo/main/original-translator.vtt"
+              },
               "sources": [
+                {
+                  "quality": "4K",
+                  "urls": [
+                    "https://movie.vodu.me:8888/videos/Batal_Al_Alam_S01_E01_1768757539-t.mp4",
+                    "https://movie.vodu.me:8888/videos/Batal_Al_Alam_S01_E01_1768757539-t.mp4"
+                  ]
+                },
                 {
                   "quality": "1080p",
                   "urls": [
-                    "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
-                    "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+                    "https://movie.vodu.me:8888/videos/Batal_Al_Alam_S01_E01_1768757539-1080.mp4",
+                    "https://movie.vodu.me:8888/videos/Batal_Al_Alam_S01_E01_1768757539-1080.mp4",
+                    "https://movie.vodu.me:8888/videos/Batal_Al_Alam_S01_E01_1768757539-1080.mp4"
                   ]
                 },
                 {
                   "quality": "720p",
                   "urls": [
-                    "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+                    "https://movie.vodu.me:8888/videos/Batal_Al_Alam_S01_E01_1768757539-360.mp4",
+                    "https://movie.vodu.me:8888/videos/Batal_Al_Alam_S01_E01_1768757539-360.mp4"
                   ]
-                }
-              ],
-              "subtitles": {
-                "ar": "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/subs/ar.vtt",
-                "en": "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/subs/en.vtt"
-              }
-            }
-          ]
-        }
-      ],
-      "recommendations": [
-        {
-          "id": "movie_002",
-          "imageUrl": "https://image.tmdb.org/t/p/w500/vUUqzWa2LnHIVqkaKVlVGkVcZIW.jpg"
-        }
-      ]
-    },
-    "movie_002": {
-      "id": "movie_002",
-      "title": "جون ويك 4",
-      "rating": "8.0",
-      "releaseYear": "2023",
-      "ageRating": "+18",
-      "overview": "يكتشف جون ويك طريقة لهزيمة المجلس الأعلى، ولكن قبل أن يتمكن من كسب حريته، يجب أن يواجه عدوًا جديدًا...",
-      "imageUrl": "https://image.tmdb.org/t/p/w500/vUUqzWa2LnHIVqkaKVlVGkVcZIW.jpg",
-      "customAdCode": "",
-      "seasons": [
-        {
-          "id": "s1",
-          "titleKey": "الفيلم الكامل",
-          "episodes": [
-            {
-              "id": "ep1",
-              "title": "مشاهدة الفيلم",
-              "duration": "169:00",
-              "thumbnailUrl": "https://image.tmdb.org/t/p/w300/7I6VUdPj6tQECNHdviJkUHD2u89.jpg",
-              "sources": [
+                },
                 {
-                  "quality": "Auto",
+                  "quality": "480p",
                   "urls": [
-                    "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+                    "https://server-main.example.,com/480/playlist.m3u8",
+                    "https://server-failover1.example.com/480/playlist.m3u8"
+                  ]
+                },
+                {
+                  "quality": "240p",
+                  "urls": [
+                    "https://server-main.example.com/240/playlist.m3u8",
+                    "https://server-failover1.example.com/240/playlist.m3u8"
                   ]
                 }
-              ],
-              "subtitles": {}
-            }
-          ]
-        }
-      ],
-      "recommendations": []
-    }
-  },
-  "searchSuggestions": [
-    {
-      "id": "movie_001",
-      "imageUrl": "https://image.tmdb.org/t/p/w500/t6HIqrNDIGGLt5VcI9w4PN8MPhD.jpg",
-      "title": "أفاتار: طريق الماء"
-    },
-    {
-      "id": "movie_002",
-      "imageUrl": "https://image.tmdb.org/t/p/w500/vUUqzWa2LnHIVqkaKVlVGkVcZIW.jpg",
-      "title": "جون ويك 4"
-    }
-  ],
-  "dynamicPages": {
-    "action_category": {
-      "title": "أفلام الأكشن",
-      "sections": [
-        {
-          "type": "banner",
-          "imageUrl": "https://image.tmdb.org/t/p/original/8rpDcsfLJypbO6vtecsmEZzAUdi.jpg",
-          "targetId": "movie_001"
-        },
-        {
-          "type": "grid",
-          "items": [
-            {
-              "id": "movie_001",
-              "imageUrl": "https://image.tmdb.org/t/p/w500/t6HIqrNDIGGLt5VcI9w4PN8MPhD.jpg"
+              ]
             },
             {
-              "id": "movie_002",
-              "imageUrl": "https://image.tmdb.org/t/p/w500/vUUqzWa2LnHIVqkaKVlVGkVcZIW.jpg"
+              "id": "m1_s1_e2",
+              "title": "الحلقة 2: الهروب من المصفوفة",
+              "duration": "48:15",
+              "thumbnailUrl": "https://i.imgur.com/thumb-e2.jpg",
+              "subtitles": {
+                "ar": "https://raw.githubusercontent.com/YourUsername/YourRepo/main/arabic-translator-ep2.vtt",
+                "en": "https://raw.githubusercontent.com/YourUsername/YourRepo/main/english-translator-ep2.vtt"
+              },
+              "sources": [
+                {
+                  "quality": "1080p",
+                  "urls": [
+                    "https://server-main.example.com/e2/1080/playlist.m3u8",
+                    "https://server-failover1.example.com/e2/1080/playlist.m3u8"
+                  ]
+                },
+                {
+                  "quality": "720p",
+                  "urls": [
+                    "https://server-main.example.com/e2/720/playlist.m3u8",
+                    "https://server-failover1.example.com/e2/720/playlist.m3u8"
+                  ]
+                },
+                {
+                  "quality": "480p",
+                  "urls": [
+                    "https://server-main.example.com/e2/480/playlist.m3u8",
+                    "https://server-failover1.example.com/e2/480/playlist.m3u8"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Season 2",
+          "episodes": [
+            {
+              "id": "m1_s2_e1",
+              "title": "الحلقة 1: العودة",
+              "duration": "50:00",
+              "thumbnailUrl": "https://i.imgur.com/thumb-s2-e1.jpg",
+              "subtitles": {
+                "ar": "https://raw.githubusercontent.com/YourUsername/YourRepo/main/arabic-translator-s2e1.vtt",
+                "original": "https://raw.githubusercontent.com/YourUsername/YourRepo/main/original-translator-s2e1.vtt"
+              },
+              "sources": [
+                {
+                  "quality": "1080p",
+                  "urls": [
+                    "https://server-main.example.com/s2e1/1080.m3u8",
+                    "https://server-failover1.example.com/s2e1/1080.m3u8"
+                  ]
+                },
+                {
+                  "quality": "720p",
+                  "urls": [
+                    "https://server-main.example.com/s2e1/720.m3u8"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "live_001",
+      "title": "قناة الرياضة العالمية - بث مباشر",
+      "overview": "تغطية حصرية لأهم البطولات والمباريات الرياضية حول العالم على مدار الساعة بتعليق عربي.",
+      "rating": "Live",
+      "releaseYear": "2026",
+      "ageRating": "All",
+      "imageUrl": "https://i.imgur.com/poster-live.jpg",
+      "watermark": {
+        "enabled": true,
+        "url": "https://i.imgur.com/live-logo.png",
+        "width": "60px",
+        "top": "30px",
+        "left": "30px",
+        "right": "auto",
+        "bottom": "auto",
+        "opacity": "0.9"
+      },
+      "recommendations": [],
+      "seasons": [
+        {
+          "id": "live_s1",
+          "title": "البث المباشر",
+          "episodes": [
+            {
+              "id": "live_ep1",
+              "title": "السيرفر الرئيسي (بث مباشر)",
+              "duration": "LIVE",
+              "thumbnailUrl": "https://i.imgur.com/live-thumb.jpg",
+              "subtitles": {},
+              "sources": [
+                {
+                  "quality": "1080p",
+                  "urls": [
+                    "https://live-server-1.example.com/sports/1080/stream.m3u8",
+                    "https://live-backup-1.example.com/sports/1080/stream.m3u8",
+                    "https://live-emergency-1.example.com/sports/1080/stream.m3u8"
+                  ]
+                },
+                {
+                  "quality": "720p",
+                  "urls": [
+                    "https://live-server-1.example.com/sports/720/stream.m3u8",
+                    "https://live-backup-1.example.com/sports/720/stream.m3u8"
+                  ]
+                },
+                {
+                  "quality": "480p",
+                  "urls": [
+                    "https://live-server-1.example.com/sports/480/stream.m3u8",
+                    "https://live-backup-1.example.com/sports/480/stream.m3u8"
+                  ]
+                }
+              ]
             }
           ]
         }
       ]
     }
-  }
-                }
+  ]
+    }
